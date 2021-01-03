@@ -104,17 +104,18 @@
                     <button class="rd-navbar-search__toggle" data-custom-toggle=".rd-navbar-search-wrap" data-custom-toggle-disable-on-blur="true"></button>
                   </div>
                 </div>
+                {% for menuitem in menuitems %}
                 <div class="rd-navbar-search_collapsable">
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="index.html">Home</a>
-    <!--                  <ul class="rd-navbar-dropdown">
+                    <li class="active"><a href="index.html">{{ menuitem.name}}</a>
+                     <ul class="rd-navbar-dropdown">
                         <li><a href="index.html">Home variant 1</a>
                         </li>
                         <li><a href="../static/site/index-variant-2.html">Home variant 2</a>
                         </li>
                         <li><a href="../static/site/index-variant-3.html">Home variant 3</a>
                         </li>
-                      </ul> -->
+                      </ul>
                     </li>
  <!--                   <li><a href="#">Features</a>
                       <ul class="rd-navbar-dropdown">
@@ -139,7 +140,7 @@
                           </ul>
                         </li>
                       </ul>
-                    </li> -->
+                    </li>
                     <li><a href="../static/site/about.html">About</a>
                     </li>
                     <li><a href="../static/site/services.html">Services</a>
@@ -176,7 +177,8 @@
                             <li><a href="../static/site/coming-soon.html">Coming Soon</a></li>
                             <li><a href="../static/site/privacy-policy.html">Privacy Policy</a></li>
                           </ul>
-                        </li>
+                        </li> -->
+                    {% endfor %}
                         <li>
                           <p class="rd-megamenu-header">Elements #1</p>
                           <ul class="rd-megamenu-list">

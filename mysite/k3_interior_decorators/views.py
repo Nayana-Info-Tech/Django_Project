@@ -28,4 +28,6 @@ def index(request):
 
     menuitems = [menuitem1, menuitem2, menuitem3, menuitem4, menuitem5]
 
+
+
     return render( request, 'index.html', {'menuitems':menuitems});
